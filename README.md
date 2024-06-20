@@ -63,5 +63,14 @@ and takes the following arguments:
 -q 		--checkpoint		Continue from specified checkpoint
 ```
 
+To train the final model, this script was executed with the following parameters:
+```console
+python3 train_model.py "four-epochs" --epochs 4 --batchsize 8 --learningrate 2e-5
+```
+Parameters that were left out had default values instantiated by the script.
+To reproduce these results on a different machine, the _path_ must be altered to fit the machine layout.
+
+This code outputs a model (with the three most recent checkpoints and the best checkpoint) in `--path/save_folder_name`
+
 ### Model Evaluation
 
