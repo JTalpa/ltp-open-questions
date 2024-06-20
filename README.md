@@ -1,6 +1,13 @@
 # OpenBART: Generating Open Questions
 We present OpenBART, a Natural Language Processing model based on BART generating relevant open questions from input paragraphs. Made for a Language Technology Practical course.
 
+## Dependencies
+
+The dependencies for the model can be automatically installed by downloading and using _references.txt_:
+```console
+pip install -r references.txt
+```
+
 ## Model Use
 
 The main way to use the model is through _generate.py_ to generate an open question from a user-inputted paragraph.
