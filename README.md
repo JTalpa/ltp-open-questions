@@ -44,10 +44,24 @@ _main_ takes a single split (train, test, validation1 or validation2) from _rexa
 python3 main.py split (path/to/save_folder)
 ```
 
-
 ### Model Training
 
-
+Model training is done using _train_model.py_. This program is more flexible and has more opportunity for customisation. It is called using the following:
+```console
+python3 train_model.py save_folder_name
+```
+and takes the following arguments:
+```console
+-m		--model					Destination name for checkpoints, results and final model
+-t 		--tokenizer			Source name of tokenizer to use
+-d 		--dataset				Source name of model to train
+-p 		--path					Path to source & destination folders
+-e 		--epochs				Number of epochs to train the model
+-l 		--learningrate	Learning rate of the model
+-b		--batchsize			Batch sizes of the model
+-c 		--cpu						Use CPU instead of GPU
+-q 		--checkpoint		Continue from specified checkpoint
+```
 
 ### Model Evaluation
 
