@@ -74,4 +74,11 @@ This code outputs a model (with the three most recent checkpoints and the best c
 
 ### Model Evaluation
 
-Model evaluation involves two files, one of which is _generate.py_, which we covered in [Model Use](#model-use)
+Model evaluation involves two files, one of which is _generate.py_, which we covered in [Model Use](#model-use). The second is _evaluate_model.py_
+This is a script that takes 100 items from the _validation2_ split of the dataset and compares the model-generated questions with dataset questions.
+Evaluation metrics are BERTScore and BLEURT. The usage is the following:
+```console
+python3 evaluate_model.py "four-epochs"
+```
+
+
