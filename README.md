@@ -74,3 +74,4 @@ This code outputs a model (with the three most recent checkpoints and the best c
 
 ### Model Evaluation
 
+Model evaluation involves two files, one of which is _generate.py_, which we covered in [Model Use](#model-use)
